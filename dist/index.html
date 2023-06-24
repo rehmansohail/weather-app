@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Source+Sans+Pro:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a538d6fa29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="./favicon.svg" />
     <title>Weather App</title>
-</head>
-<body>
-    
-</body>
-<script src="main.js"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <form>
+          <div class="form-group">
+            <button class="submit-btn">
+              <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search city" />
+            <br />
+            <span class="error-msg">No matching location found!</span>
+          </div>
+        </form>
+      </header>
+      <div class="main-weather-display info">
+        <div class="general-info">
+          <p class="condition">SUNNY</p>
+          <h1 class="location">JAMMU, INDIA</h1>
+          <span class="degrees">45</span>
+        </div>
+        <div class="weather-details info">
+          <p class="feels-like">FEELS LIKE: 52</p>
+          <p class="wind-mph">WIND: 5 MPH</p>
+          <p class="humidity">HUMIDITY: 21</p>
+        </div>
+      </div>
+     
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 rehmansohail</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
+
